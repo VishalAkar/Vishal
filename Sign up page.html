@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<head>
+<title>
+LOGIN PAGE
+</title>
+<style>
+body{
+ background:url(s2.jpeg);
+background-size:1380px 1230px;
+background-repeat:no-repeat;}
+
+ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		//background-color:#333;
+	}
+	
+	li {
+		float: right;
+	}
+	
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+li a:hover {
+		background-color: grey;
+		opacity: 0.7;
+	}
+font:hover {
+		background-color: grey;
+		opacity: 1;
+}
+td{
+animation-name:a1;
+animation-duration:5s;
+
+image-shadow: 2px 2px 10px white;
+
+}
+
+a
+{
+text-decoration:none;
+display:block;
+}
+}
+	
+</style>
+<script>
+function validateForm() {
+var a=document.forms["Sign up"]["Full Name"].value
+   if (a == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+
+
+var b=document.forms["Sign up"]["mail"].value
+   if (b == "") {
+        alert("Email must be filled out");
+        return false;
+    }
+
+
+var c=document.forms["Sign up"]["password"].value
+   if (c == "") {
+        alert("Password must be filled out");
+        return false;
+    }
+
+
+var d=document.forms["Sign up"]["confirm password"].value
+   if (d == "") {
+        alert("Password must be filled");
+        return false;
+    }
+
+
+var d=document.forms["Sign up"]["confirm password"].value
+if (d != c) {
+        alert("Password does not match");
+        return false;
+    }
+var e=document.forms["Sign up"]["c1"].checked
+if(e==false)
+{
+alert("You have not accepted the terms and conditions");
+  return false;
+}
+alert("Form has been submitted");
+}
+</script>
+</head>
+<body >
+<ul>
+	<li><a href="#">Contact Us</a></li>
+	<li><a href="#">User Reviews</a></li>
+	<li><a href="#">Famous Attractions</a></li>
+	<li><a href="#">Plan a Trip</a></li>
+	<li><a href="#">Search Hotels</a></li>
+	<li><a href="#">Home</a></li>
+</ul>
+<br><br><br>
+<center>
+<table Border="0px" font color="White" background="" width="400px" height="250px">
+<form name="Sign up" action="" onsubmit="return validateForm()" method="post">
+<tr>
+<td>
+<font color="white">
+NAME:
+</font>
+</td>
+</tr>
+<tr>
+<td>
+<input type="text" name="Full Name" placeholder="Enter your name" required>
+</td>
+</tr>
+<tr>
+
+<td>
+<font color="white">
+EMAIL:
+</font>
+
+</td>
+</tr>
+<tr>
+<td>
+<input type="email" name="mail" placeholder="Enter your email id" required>
+</td>
+</tr>
+<tr>
+<td>
+<font color="white">
+PASSWORD
+</font>
+</td>
+</tr>
+<tr>
+<td>
+<input type="password" name="password" placeholder="Enter the password" value="" maxlength="25" required>
+</td>
+</tr>
+<tr>
+<td>
+<font color="white">
+CONFIRM PASSWORD
+</font>
+</td>
+</tr>
+<tr>
+<td>
+<input type="password" name="confirm password" placeholder="confirm your password" maxlength="25" required 	>
+</td>
+</tr>
+<tr>
+<td>
+<input type="checkbox" name="c1" value="" required> <font color="white">I agree all terms and conditions
+</font>
+</td>
+</tr>
+<tr>
+<td>
+<input type="submit" name="s1" value="Submit"/>
+<input type="reset" name="r1"value="Reset"/>
+</td>
+</tr>
+</form>
+</table>
+<font color="#D2691E">
+<h3>
+OR
+</h3>
+</font>
+<hr>
+<center>
+<table>
+<tr>
+<td>
+<a href="https://accounts.google.com/ServiceLogin?sacu=1&scc=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&osid=1&service=mail&ss=1&ltmpl=default&rm=false#identifier" target="parent">
+<font color="Red">
+<h2>
+Login with Google 
+</font>
+<img src="google+.png" height="25px" width="25px">
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://www.facebook.com/" target="parent">
+<fontcolor="#8B4513">
+<h2>
+Login with Facebook
+</font>
+<img src="facebook.png" height="25px" width="25px">
+</a>
+</td>
+</tr>
+</table>
+
+
+</body>
+</html>
